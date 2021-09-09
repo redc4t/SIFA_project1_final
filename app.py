@@ -15,6 +15,8 @@ class Register(db.Model):
 
 db.create_all()
 
+
+
 @app.route('/', methods=['GET', 'POST'])
 def home():
     if request.form:
