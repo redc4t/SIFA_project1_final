@@ -6,3 +6,4 @@ the CRUD functionality will come from the use of being able to save generated ch
 
 I will be achieving this by using python and the flask microframework to create an application using the languages Python and HTML. supplementing these will be the use of Jenkins, AWS (Amazon Web Services) and Gunicorn.
 
+![image](https://user-images.githubusercontent.com/88770574/132711564-68b745cb-3cb8-4b04-b5d3-62d29138db20.png)
