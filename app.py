@@ -2,16 +2,19 @@ from flask import Flask
 
 app = Flask(__name__)
 
-@app.route('/home', methods=['GET', 'POST'])
-def character_sheet():
-    if request.method == 'POST':
-        return home.html
-    else:
-        return about.html
+@app.route('/about')
+def about():
+    return render_template('about.html')
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://user:password@192.162.0.1:3306/mydb'
-if __name__=='__main__':
+@app.route('/home')
+def home():
+    return render_template('home.html')
+
+@app.route('/charsheet')
+def charsheet():
+    return render_template('charsheet.html')
+
+if __name__=="__main__":
     app.run(debug=True, host='0.0.0.0')
-
 
 
